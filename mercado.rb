@@ -1,9 +1,11 @@
 class Mercado
-    attr_accessor :nome, :preco
-    def initialize(nome, preco)
-        @nome = nome
-        @preco = preco
-      end
+    def initialize(produto)
+        @produto = produto
     end
+
+      def comprar
+        puts "você comprou o produto #{@produto.nome} no valor de #{@produto.preco}"
+    end
+end
 
 
